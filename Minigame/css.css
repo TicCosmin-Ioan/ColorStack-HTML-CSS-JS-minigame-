@@ -1,0 +1,66 @@
+#ChenarJoc
+{   
+    align-content: space-around;
+    display: flex;
+    flex-flow: column wrap;
+    width: 800px;
+    height: 200px;
+    margin: 5% auto;
+    padding: 10px;
+    border: 5px solid rgb(87, 87, 87);
+    background-color: #fff;
+}
+.Titlu
+{
+    
+    display: flex;
+    justify-content: center;
+  
+}
+.Letter:hover
+{
+    font-size: 60px;
+    transition: 0.5s;
+    color: rgb(255, 0, 102);
+    text-shadow: 2px 2px white;
+    cursor: pointer;
+
+}
+body
+{
+    background-color: rgb(112, 255, 35);
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    
+    
+}
+
+body>h1{
+    text-shadow:2px 2px rgb(0, 0, 0);
+    
+}
+body>p{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    
+}
+.Patrate
+{   
+
+    width: 20px;
+    height: 20px;
+    border: 5px solid rgb(87, 87, 87);
+    background-color: #fff;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+}
+
+h1
+{
+    text-align: center;
+}
+p
+{
+    text-align: center;
+}

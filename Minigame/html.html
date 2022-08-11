@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CStack-Minigame</title>
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+  
+
+        <h1>
+            <div class="Titlu">
+            <div class="Letter"><b>C</b></div>
+            <div class="Letter"><b>o</b></div>
+            <div class="Letter"><b>l</b></div>
+            <div class="Letter"><b>o</b></div>
+            <div class="Letter"><b>r</b></div>
+            <div class="Letter"><b>S</b></div>
+            <div class="Letter"><b>t</b></div>
+            <div class="Letter"><b>a</b></div>
+            <div class="Letter"><b>c</b></div>
+            <div class="Letter"><b>k</b></div>
+            </div>
+
+        </h1>
+        <p>
+            <b><em>-Try to get all the squares to have the same color or create intercate patters.
+                Change the color of a square by clicking on it.-</em></b>
+        </p>
+
+
+
+
+<div id="ChenarJoc">
+</div>
+        <p>
+            <b>You can reset your work anytime by reloading the page.</b>
+        </p>
+
+<script>
+
+    document.body.onload = addElement;
+
+    const ChJoc = document.getElementById("ChenarJoc");
+    var style = getComputedStyle(ChJoc);
+    var ct=0;
+
+
+        function addElement () 
+        {   
+            while(ct<72)
+            {
+
+            const newDiv = document.createElement("div");
+             
+            const newContent = document.createTextNode(" ");
+
+            newDiv.appendChild(newContent);
+            newDiv.classList.add('Patrate');
+
+            function random_rgba() 
+            {
+            var o = Math.round, r = Math.random, s = 255;
+            return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+            }
+
+            var cColor = random_rgba();
+            newDiv.style.backgroundColor=cColor;
+            newDiv.addEventListener('click',function random_rgba() 
+            {
+            var o = Math.round, r = Math.random, s = 255;
+            var cColor = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+            newDiv.style.backgroundColor=cColor;
+            }           
+            )
+            
+            ChJoc.appendChild(newDiv);
+            ct++;
+            
+
+            }
+     
+
+        }
+
+
+
+</script>
+
+</body>
+
+</html>
